@@ -1,0 +1,17 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html, body, #root, main{
+    
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+}
+footer{
+
+    margin-top: auto;
+}
