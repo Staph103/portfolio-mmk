@@ -15,3 +15,7 @@ footer{
 
     margin-top: auto;
 }
+.custom-line-height {
+    line-height: 1.5; /* Adjust the value to set the desired line height */
+  }
+  

@@ -98,9 +98,9 @@ const Portfolio = () => {
             <PortfolioCard
               ImageHref="https://i.ibb.co/64WfFPt/image-01.jpg"
               category="Branding"
-              title="NoSQL"
+              title="Creative Agency"
               button="View Details"
-              buttonHref="https://github.com/Staph103/noSql-MMK"
+              buttonHref="#"
               showCard={showCard}
             />
             <PortfolioCard

@@ -17,7 +17,7 @@ function classNames(...classes) {
 export default function Navigation() {
 const location = useLocation()
   return (
-    <Disclosure as="nav" className="bg-gray-800 py-6">
+    <Disclosure as="nav" className="bg-gray-900 py-6">
       {({ open }) => (
         <>
           <div className="mx-auto px-4 sm:px-4 lg:px-4">
