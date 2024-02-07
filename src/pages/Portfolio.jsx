@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import WeatherImg from '../assets/weatherAPP.png'
 
 const Portfolio = () => {
   const [showCard, setShowCard] = useState("all");
@@ -45,26 +46,26 @@ const Portfolio = () => {
                 </li>
                 <li className="mb-1">
                   <button
-                    onClick={() => handleProject("branding")}
+                    onClick={() => handleProject("REACT")}
                     className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
-                      showCard === "branding"
+                      showCard === "REACT"
                         ? "activeClasses bg-primary text-white"
                         : "inactiveClasses text-body-color dark:text-dark-6 hover:bg-primary hover:text-white"
                     }`}
                   >
-                    Branding
+                    REACT
                   </button>
                 </li>
                 <li className="mb-1">
                   <button
-                    onClick={() => handleProject("design")}
+                    onClick={() => handleProject("SQL")}
                     className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
-                      showCard === "design"
+                      showCard === "SQL"
                         ? "activeClasses bg-primary text-white"
                         : "inactiveClasses text-body-color dark:text-dark-6 hover:bg-primary hover:text-white"
                     }`}
                   >
-                    Design
+                    SQL
                   </button>
                 </li>
                 <li className="mb-1">
@@ -82,7 +83,7 @@ const Portfolio = () => {
                 <li className="mb-1">
                   <button
                     onClick={() => handleProject("development")}
-                    className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
+                    className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-3 ${
                       showCard === "development"
                         ? "activeClasses bg-primary text-white"
                         : "inactiveClasses text-body-color dark:text-dark-6 hover:bg-primary hover:text-white"
@@ -96,8 +97,8 @@ const Portfolio = () => {
           </div>
           <div className="flex flex-wrap -mx-4">
             <PortfolioCard
-              ImageHref="https://i.ibb.co/64WfFPt/image-01.jpg"
-              category="Branding"
+              img={<WeatherImg src={WeatherImg} />}
+              category="REACT"
               title="Creative Agency"
               button="View Details"
               buttonHref="#"
@@ -129,7 +130,7 @@ const Portfolio = () => {
             />
             <PortfolioCard
               ImageHref="https://i.ibb.co/m6dq2fX/image-04.jpg"
-              category="Design"
+              category="SQL"
               title="Creative Agency"
               button="View Details"
               buttonHref="#"
@@ -164,7 +165,7 @@ const PortfolioCard = ({
     <>
       <div
         className={`w-full px-4 md:w-1/2 xl:w-1/3 ${
-          showCard === "all" || showCard === category.toLowerCase()
+          showCard === "all" || showCard === category.toUpperCase()
             ? "block"
             : "hidden"
         }`}
@@ -173,7 +174,7 @@ const PortfolioCard = ({
           <div className="overflow-hidden rounded-[10px]">
             <img src={ImageHref} alt="portfolio" className="w-full" />
           </div>
-          <div className="relative z-10 mx-7 -mt-20 rounded-lg bg-white dark:bg-dark-2 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark">
+          <div className="relative z-10 mx-7 -mt-10 rounded-lg bg-white dark:bg-dark-2 py-[5px] px-3 text-center shadow-portfolio dark:shadow-box-dark">
             <span className="text-primary mb-2 block text-sm font-medium">
               {category}
             </span>
