@@ -1,7 +1,7 @@
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-
+// import mmk from '../assets/mmk.PNG'
 
 const navigation = [
   { name: 'About', to: '/' , current: false},
@@ -37,9 +37,9 @@ const location = useLocation()
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="h-7 w-7"
-                    src={''}
-                    alt="Your Company"
+                    className="h-7 w-7" 
+                    src= './assets/mmk.PNG'
+                    alt="Profile Picture"
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
