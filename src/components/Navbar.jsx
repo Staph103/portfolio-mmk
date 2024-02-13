@@ -38,7 +38,7 @@ const location = useLocation()
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-7 w-7" 
-                    src= './assets/mmk.PNG'
+                    src= '../assets/mmk.PNG'
                     alt="Profile Picture"
                   />
                 </div>

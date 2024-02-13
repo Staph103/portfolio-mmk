@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PDF from "../assets/Mustapha_Kromah2.pdf";
 import { pdfjs, Document, Page } from "react-pdf";
+import Footer from "../components/Footer";
 
 export default function Resume() {
   pdfjs.GlobalWorkerOptions.workerSrc = new URL(
@@ -37,9 +38,9 @@ export default function Resume() {
   };
 
   return (
-    <>
-      <div className="pb-2 mx-5">
-        <h3 className="pb-2 text-3xl">Resume</h3>
+    <><div className="bgImg2 text-white">
+      <div className="pb-2 mx-5 ">
+        <h1 className="pb-2 text-3xl  ">Resume</h1>
         <h6>
           Toggle here to view my{" "}
           <a href="#image" onClick={handleClick} className="underline">
@@ -55,7 +56,7 @@ export default function Resume() {
       {showPDF ? (
         <div className="mx-5 flex flex-row">
           <ul className="mx-5">
-            <p className="font-bold"> Front-end Proficiencies</p>
+            <p className="font-bold text-white"> Front-end Proficiencies</p>
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
@@ -76,7 +77,7 @@ export default function Resume() {
             <li>REST APIs</li>
             <li>GraphQL</li>
           </ul>
-          <p>Also: being an awesome kitty. </p>
+         
         </div>
       ) : (
         <div className="">
@@ -95,8 +96,11 @@ export default function Resume() {
           <p>
             Page {pageNumber} of {numPages}
           </p>
+          
         </div>
       )}
+      </div>
+      <Footer></Footer>
     </>
   );
 }

@@ -32,7 +32,7 @@ export default function Footer() {
             </svg>
           </div>
         </a>
-        <a href="javascript:void(0)" class="mx-5">
+        <a href="https://www.linkedin.com/in/mustapha-kromah-762a782a0/" class="mx-5">
           <div aria-label="LinkedIn" role="img">
             <svg
               xmlns="http://www.w3.org/2000/svg"

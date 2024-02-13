@@ -2,62 +2,85 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-html, body, #root, main{
-    
-    height:100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-
+html,
+body,
+#root,
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
-footer{
-
-    margin-top: auto;
+.bgImg {
+    background-image: url("../src/assets/coloured-background-design_1107-127.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.bgImg2 {
+    background-image: url("../src/assets/abstract-background-design_1107-142.jpg");
+    background-size: cover;
+    background-position: center;
+}
+footer {
+  margin-top: auto;
 }
 .custom-line-height {
-    line-height: 1.5; 
-  }
-  .project-container {
+  line-height: 1.5;
+}
+.project-container {
     
-    width: 500px; 
-    height: 500px;
-    border: 4px solid #333; 
-    border-radius: 10px; 
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    overflow: hidden; 
-  }
-  
-  .project-container:hover {
-    transform: scale(1.05);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3), 0 12px 40px rgba(0, 0, 0, 0.3); 
-  }
-  
-  .project-image {
-    width: 100%;
-    height: auto; 
-    max-height: 70%; 
-    object-fit: cover;
-    object-position: center;
-  }
-  
-  .project-details {
-    background-color: #fff;
-    padding: 20px;
-  }
-  
-  .project-details h5,
-  .project-details p,
-  .project-details button {
-    margin: 0; 
-    text-align: center; 
-  }
-  
-  .project-details button {
-    margin-top: 20px; 
-  }
-  
-  .project-details:hover {
-    opacity: 0.9; 
-  }
-  
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+/* .project-container:hover {
+        transform: scale(1.05);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3), 0 12px 40px rgba(0, 0, 0, 0.3); 
+    } */
+
+.project-image {
+  width: 100%;
+  height: auto;
+  max-height: 70%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-details {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.project-details h5,
+.project-details p,
+.project-details button {
+  margin: 0;
+  text-align: center;
+}
+
+.project-details button {
+  margin-top: 20px;
+}
+
+.project-details:hover {
+  opacity: 0.9;
+}
+.projects-card {
+  /* Resting shadow with multiple colors */
+  box-shadow: 0px 8px 16px rgb(207, 61, 17),
+    10px 22px 32px rgb(2, 0, 39);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.projects-card:hover {
+  /* Extended shadow colors and levitation */
+  box-shadow: 0px 8px 16px rgb(207, 61, 17),
+    0px 32px 32px rgb(14, 8, 123);
+
+  transform: translateY(-8px); /* Levitate */
+}

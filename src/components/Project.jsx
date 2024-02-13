@@ -2,7 +2,7 @@ import React from 'react';
 
 function Projects({ imgSrc, title, description, id }) {
   return (
-    <div className="project-container">
+    <div className="project-container projects-card">
       <a href="#">
         <img className="project-image rounded-t-lg" src={imgSrc} alt="" />
       </a>

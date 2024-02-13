@@ -16,7 +16,7 @@ export default function Example() {
                   The page you are looking for it maybe deleted
                 </p>
                 <a
-                  href="/"
+                  href="/Errorpage"
                   className="inline-block rounded-lg border border-dark px-8 py-3 text-center text-base font-semibold text-white transition bg-gray-800 hover:bg-dark hover:text-primary"
                 >
                   Go To Home
